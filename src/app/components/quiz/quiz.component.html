@@ -1,0 +1,23 @@
+<body class="text-center">
+    <ng-container *ngFor="let question of questions">
+        <div class="content">
+            <div *ngIf="questionOrder==question.questionId" id="quizBox" class="card border-secondary">
+                <div class="card-header">{{question.question}}</div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <button *ngFor="let option of question.options" (click)="click(option.answer)"
+                            class="btn btn-outline-dark">
+                            {{option.answer}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <div id="correct-message-container" class="hidden">
+        <span class="message-text">Correct Answer</span>
+    </div>
+    <div id="wrong-message-container" class="hidden">
+        <span class="message-text">Wrong Answer</span>
+    </div>
+</body>

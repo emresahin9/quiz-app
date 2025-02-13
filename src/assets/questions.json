@@ -1,0 +1,68 @@
+[
+    {
+        "questionId": 1,
+        "question": "What is the capital of Turkiye?",
+        "options": [
+            {
+                "answer": "Ankara",
+                "isCorrect" : true
+            },
+            {
+                "answer": "Istanbul",
+                "isCorrect" : false
+            },
+            {
+                "answer": "Izmir",
+                "isCorrect" : false
+            },
+            {
+                "answer": "Bursa",
+                "isCorrect" : false
+            }
+        ]
+    },
+    {
+        "questionId": 2,
+        "question": "which country is not a neighbor of Turkiye",
+        "options": [
+            {
+                "answer": "Iran",
+                "isCorrect" : false
+            },
+            {
+                "answer": "Bulgaria",
+                "isCorrect" : false
+            },
+            {
+                "answer": "Romania",
+                "isCorrect" : true
+            },
+            {
+                "answer": "Armenia",
+                "isCorrect" : false
+            }
+        ]
+    },
+    {
+        "questionId": 3,
+        "question": "Which city is the biggest city in Turkiye?",
+        "options": [
+            {
+                "answer": "Istanbul",
+                "isCorrect" : false
+            },
+            {
+                "answer": "Ankara",
+                "isCorrect" : false
+            },
+            {
+                "answer": "Sivas",
+                "isCorrect" : false
+            },
+            {
+                "answer": "Konya",
+                "isCorrect" : true
+            }
+        ]
+    }
+]

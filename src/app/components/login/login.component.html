@@ -1,0 +1,21 @@
+<body class="text-center">
+    <main class="form-signin">
+        <h1 class="mb-3">Quiz</h1>
+        <div class="card bg-dark border-secondary">
+            <div class="card-body">
+                <form [formGroup]="loginForm">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="name" formControlName="name" placeholder="name@example.com">
+                        <label for="name">Name</label>
+                        <div *ngIf="loginForm.controls['name'].invalid && (loginForm.controls['name'].dirty || loginForm.controls['name'].touched)" class="alert text-danger p-1">
+                            <div *ngIf="loginForm.controls['name'].errors.required">
+                                Please enter your name
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-outline-info" type="submit" (click)="login()">Start</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>

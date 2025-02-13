@@ -1,0 +1,80 @@
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 330px;
+}
+
+.card {
+    text-align: center;
+    background-color:rgb(228, 250, 250);
+    animation-name: questionCard;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes questionCard {
+    0%   {top:-50px;}
+    25%  {top:-10px;}
+    50%  {top:5px;}
+    75%  {top:-3px;}
+    100% {top:0px;}
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hidden {
+    display: none;
+}
+
+#correct-message-container,
+#wrong-message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #e0f7e9;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: message-container 1s;
+}
+
+@keyframes message-container { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+#wrong-message-container {
+    background-color: #f7e0e0;
+    border-color: #f44336;
+}
+
+.message-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#correct-message-container .message-text,
+#correct-message-container .message-icon {
+    color: #4caf50;
+}
+
+#wrong-message-container .message-text,
+#wrong-message-container .message-icon {
+    color: #f44336;
+}
+
+.message-icon {
+    font-size: 30px;
+}
