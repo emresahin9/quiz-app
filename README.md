@@ -1,6 +1,6 @@
 # QuizApp
 
-Kullanıcı dostu arayüzüyle her cihazda sorunsuz çalışacak şekilde Angular ile web ortamı için geliştirilmiş bir Quiz uygulamasıdır.
+Kullanıcı dostu arayüzüyle her cihazda sorunsuz çalışacak şekilde **Angular** ile web ortamı için geliştirilmiş bir Quiz uygulamasıdır.
 
 ## Teknolojiler
 
